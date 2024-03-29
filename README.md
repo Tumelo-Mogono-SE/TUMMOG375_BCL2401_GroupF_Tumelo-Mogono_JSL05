@@ -1,48 +1,29 @@
 # [JSL05] Submission: Galaxy Playlist Generator
-
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL05] Submission Project Tab.
-
-Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/pXXzN5GT6
-
+# Project Overview: 
 ### Galaxy Playlist Generator
 
-In this challenge, you'll combine your knowledge of JavaScript arrays and the `map()` function to create a personalized "Awesome Mix" playlist for each of the Guardians of the Galaxy. Your task is to filter and organize songs based on each Guardian's musical preference, displaying a playlist tailored just for them.
+In this project, I will be combining my knowledge of JavaScript arrays and the `map()` function to create a personalized "Awesome Mix" playlist for each of the Guardians of the Galaxy. My task is to filter and organize songs based on each Guardian's musical preference, displaying a playlist tailored just for them.
 
 ![alt text](JSL05_solution.png)
 
-#### Instructions:
+# Utilizing Arrays and map() function
 
-1. **Expand the Songs Array**: Add at least five songs to the `songs` array, each with `title`, `artist`, and `genre`.
-2. **Assign Preferences**: Complete the `guardians` object by assigning each Guardian their preferred music genre.
-3. **Generate Playlists**: Implement the `generatePlaylist` function. Use the `map()` function to create a personalized playlist for each Guardian based on their genre preference.
-4. **Display Playlists**: Dynamically create and append elements to the `#playlists` div to display each Guardian's playlist. Include the Guardian's name and their list of songs.
-5. **Test Your Application**: Ensure that your application correctly filters songs by genre for each Guardian and displays the playlists on the web page.
+* For this project, I added more songs in the songs array and also added three more characters in the object for the guardians with their preferred genre.
+* Have a function "generatePlaylist()" which returns an array which contains an object which contains the guardian name and a playlist filtered to have an array of objects having songs/tracks which match the preferred genre of the specific guardian.
+* Have a variable which has assigned to it the function generatePlaylist which is going  to be used in the logic to loop through the returned array in order to add the information from the function's results into the HTML.
+* Using the div element already in the HTML file, I fetched the element and assigned it to a variable. Using a foreach loop, taking in the guardian and playlist as parameters from the playlists variable, I created a div element and add a class to it which is used to add styling to the div element. I created a H4 element and added content to it calling the parameter for the guardian name and "playlist" string to indicate this is a specific guardian's playlist. I then added this H4 element inside the div element. I then created a paragraph element and added a class to it for styling, created a span element and added a class to it for styling and added content to it using filtered playlist fetching the song title and added the span inside the paragraph element. I then added into the content of the paragraph element the song artist and then added the paragraph element into the div element. Then I added the div element into the div element I had initially fetched from the DOM.
 
-## What You Need to Do:
 
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
-2. Open the cloned project in your code editor.
-3. Code your solution for each of the challenges as per the provided instructions.
-4. Commit your changes to your local Git repository with meaningful commit messages.
-5. Push your local Git repository to your GitHub account.
-6. Verify that the changes have been successfully pushed to your GitHub repository.
+# Challenges
 
-## What You Need to Include:
+Not a lot of challenges from this project, I only had to do alot of reading to fully understand how exactly the map() function works, once I did more research and practised in scrimba I was able to complete this project easier. I also faced a little bit of difficulty when I was using the foreach loop for iterations, had a hard time figuring out which parameter to chose for the function.
 
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
+# Feedback
 
-## How We'll Assess Your Work:
+I have no critical feedback, I just liked how challenging this project was. It helped build my problem solving skills and made me improve my pseudo code and thinking for target a problem in order to have a solution.
 
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
 
-This challenge will test your ability to manipulate arrays and objects, use the `map()` function for data transformation, and dynamically update the DOM based on data. Good luck, and may your mix be truly awesome!
+
 
 
 

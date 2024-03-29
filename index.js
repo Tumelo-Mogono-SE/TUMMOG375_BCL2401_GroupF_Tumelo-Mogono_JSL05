@@ -59,8 +59,8 @@ playlists.forEach(({ guardian, playlist}) => {
         const songTitleSpan = document.createElement('span');
         songTitleSpan.classList.add('song-title');
         songTitleSpan.textContent = track.title;
-
         songParagraph.appendChild(songTitleSpan);
+        
         songParagraph.innerHTML += ` by ${track.artist}`;
         individualPlaylistDiv.appendChild(songParagraph);
     });

@@ -11,6 +11,12 @@ const songs = [
     { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
     { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
+    { title: "Clouded", artist: "Brent Faiyaz", genre: "R&B" },
+    { title: "Break from Toronto", artist: "PARTYNEXTDOOR", genre: "R&B" },
+    { title: "Keep The Family Close", artist: "Drake", genre: "R&B" },
+    { title: "Set Fire to the Rain", artist: "Adele", genre: "Pop"},
+    { title: "Dance The Night - From Barbie The Album", artist: "Dua Lipa", genre: "Pop" },
+    { title: "Back In Black", artist: "AC/DC", genre: "Rock" }
     // Feel free to add even more songs
 ];
 
@@ -27,8 +33,6 @@ const guardians = {
 
 // Function to generate playlist based on preferred genre
 function generatePlaylist(guardians, songs) {
-    // Use the map() function to create playlists for each Guardian
-    // Your code here
     return Object.entries(guardians).map(([guardian, preferredGenre]) => {
     let playlist = songs.filter(track => track.genre === preferredGenre);
          
